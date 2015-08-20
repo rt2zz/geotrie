@@ -1,12 +1,14 @@
-#level-geotrie
-Store and search geo data.  Geohashes latitude/longitude coordinates and stores them in a leveldb instance.  Uses the lexographical sorting of leveldb to provide a trie like data structure and efficient search algorithm.
+#Geotrie
+Store and search geo data. Geohashes and stores latitude/longitude coordinates and provides a search interface.
+
+Right now depends on leveldb, as it uses the lexographical sorting of leveldb to provide a trie like data structure and efficient search algorithm. However this approach can and should be generalized to work in memory and with other databases.
 
 Heavily borrowed from / inspired by [level-trie](https://github.com/juliangruber/level-trie) and [level-places](https://github.com/Wayla/level-places).  Thanks to Julian Gruber.
 
 ##Usage
 ```js
 var level = require('level')
-var GeoTrie = require('level-geotrie')
+var GeoTrie = require('geotrie')
 var geotrie = geotrie(level(__dirname + '/db'))
 
 geotrie.add({lat: 1, lon: 1}, 'SomeReferenceString')
