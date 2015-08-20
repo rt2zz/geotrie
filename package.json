@@ -1,0 +1,17 @@
+{
+  "name": "level-geotrie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "event-stream": "^3.2.2",
+    "shutup": "0.0.1",
+    "through": "^2.3.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rt2zz <zack@root-two.com>",
+  "license": "MIT"
+}
